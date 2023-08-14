@@ -185,7 +185,7 @@ export class Line extends Script {
     this._mesh.addSubMesh(0, indices.length);
 
     // @ts-ignore
-    this._mesh._enableVAO = false;
+    this._primitive.enableVAO = false;
   }
 
   protected _initMaterial() {

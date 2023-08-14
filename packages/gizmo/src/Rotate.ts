@@ -168,7 +168,7 @@ export class RotateControl extends GizmoComponent {
     planeHelperRenderer.castShadows = false;
     planeHelperRenderer.mesh = this._rotateHelperPlaneMesh;
     // @ts-ignore
-    this._rotateHelperPlaneMesh._enableVAO = false;
+    this._rotateHelperPlaneMesh._primitive.enableVAO = false;
     planeHelperRenderer.setMaterial(Utils.rotatePlaneMaterial);
     this._rotateHelperPlaneEntity.isActive = false;
   }

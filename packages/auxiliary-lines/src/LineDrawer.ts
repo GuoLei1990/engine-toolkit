@@ -203,7 +203,7 @@ export class LineDrawer extends Script {
     const supportUint32Array = engine._hardwareRenderer.canIUse(GLCapabilityType.elementIndexUint);
 
     // @ts-ignore
-    mesh._enableVAO = false;
+    mesh._primitive.enableVAO = false;
     mesh.addSubMesh(0, LineDrawer._indicesCount, MeshTopology.Lines);
     renderer.mesh = mesh;
     renderer.setMaterial(material);
